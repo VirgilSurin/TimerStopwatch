@@ -13,17 +13,16 @@ import java.awt.event.ActionListener;
 public class ConsoleGUI extends AbstractGUI {
     
     private JButton b1, b2, b3;
-    private JLabel myText1, myText2, myText3;
-        
+
     public ConsoleGUI(EventListener o) { super(o); }
     
     protected void initGUI() {
         b1 = new JButton();
         b2 = new JButton();
         b3 = new JButton();
-        myText1 = new JLabel();
-        myText2 = new JLabel();
-        myText3 = new JLabel();
+        JLabel myText1 = new JLabel();
+        JLabel myText2 = new JLabel();
+        JLabel myText3 = new JLabel();
 
         JFrame myFrame = new JFrame("Chronometer");
         Container myContent = myFrame.getContentPane();

@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
 public class StopwatchTests {
 
 	private static Context context;
-	private ClockState current, newState;
+	private ClockState current;
 
-	@Before
+    @Before
 	public void setup() {
         context = new Context(); // create the state machine context
         AbstractStopwatch.resetInitialValues();
@@ -47,7 +47,7 @@ public class StopwatchTests {
 	public void testHistoryState() {		
 		current = AbstractStopwatch.Instance();
 		// after processing the left() event, we should arrive in the initial state of AbstractStopwatch
-		newState = current.left();
+        ClockState newState = current.left();
 		assertEquals(AbstractTimer.Instance(), newState);
 		/* after another occurrence of the left() event, we should return to the original state
 		 * because we used history states		
