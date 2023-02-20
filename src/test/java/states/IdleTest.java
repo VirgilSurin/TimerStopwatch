@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+@SuppressWarnings("ALL")
 public class IdleTest {
 
 	private Context context;

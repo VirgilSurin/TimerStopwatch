@@ -2,6 +2,7 @@ import gui.AbstractGUI;
 import gui.SwingGUI;
 import states.Context;
 
+@SuppressWarnings("ALL")
 public class ChronometerMain {
     
 	private AbstractGUI g;
