@@ -5,8 +5,9 @@ import states.ClockState;
 public class ResetStopwatch extends AbstractStopwatch {
 
 	// use Singleton design pattern
-    private ResetStopwatch() {};
-    private static ResetStopwatch instance = null;
+    private ResetStopwatch() {}
+
+	private static ResetStopwatch instance = null;
     public static ResetStopwatch Instance() {
         if(instance == null) instance = new ResetStopwatch();
         return instance;
