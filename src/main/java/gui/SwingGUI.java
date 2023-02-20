@@ -10,6 +10,7 @@ import java.awt.GridLayout;
  * @author tommens
  * This class extends the HeadlessGUI to draw a real GUI on the screen
  */
+@SuppressWarnings("ALL")
 public class SwingGUI extends HeadlessGUI {
 
     public SwingGUI(EventListener o) { super(o); }
