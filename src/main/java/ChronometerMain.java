@@ -2,7 +2,7 @@ import gui.AbstractGUI;
 import gui.SwingGUI;
 import states.Context;
 
-@SuppressWarnings("ALL")
+@SuppressWarnings({"ALL", "BusyWait"})
 public class ChronometerMain {
     
 	private AbstractGUI g;
