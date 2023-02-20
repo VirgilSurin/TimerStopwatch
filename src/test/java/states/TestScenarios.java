@@ -1,10 +1,9 @@
 package states;
 
-import org.junit.Before;
-import org.junit.Test;
-
 import static org.junit.Assert.*;
-import states.Context;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import states.stopwatch.*;
 import states.timer.*;
 
@@ -12,7 +11,7 @@ public class TestScenarios {
 
 	Context c;
 	
-    @Before
+    @BeforeEach
     public void setup() {
     	c = new Context();
      	//before each test, reset the timer values to avoid interference between tests:

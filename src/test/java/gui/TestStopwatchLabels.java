@@ -2,10 +2,11 @@ package gui;
 
 import static org.junit.Assert.*;
 import org.junit.*;
+import org.junit.jupiter.api.Test;
 
 public class TestStopwatchLabels extends TestGUIAbstract {
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testStopwatch1() {
     	c.left(); //simulate clicking on the left button
     	g.updateUI(c); //apply the effect on the user interface
