@@ -14,7 +14,8 @@ public class ChronometerMain {
         // infinite loop that asks the current state to do whatever it needs to do
         // and that updates the graphical user interface accordingly
  		  g.updateUI(c);
-    	  while (true) {
+		//noinspection InfiniteLoopStatement
+		while (true) {
     		try { Thread.sleep(frequency); }
     		catch (InterruptedException e) { e.printStackTrace(); }
  	        g.updateUI(c);
